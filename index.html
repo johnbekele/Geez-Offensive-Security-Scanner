@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geez Offensive Security Scanner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Terminal-like styling */
+        #output {
+            background-color: black;
+            color: limegreen;
+            font-family: monospace;
+            padding: 10px;
+            border-radius: 5px;
+            height: 300px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* Copy button styling */
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: transparent;
+            border: none;
+            color: limegreen;
+            cursor: pointer;
+        }
+
+        .copy-btn:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-dark text-light">
+    <div class="container mt-5">
+        <h2 class="text-center">Geez Offensive Security Scanner</h2>
+
+        <div class="mb-3">
+            <label for="target" class="form-label">Enter IP or Website</label>
+            <input type="text" id="target" class="form-control" placeholder="e.g. 192.168.1.1 or example.com">
+        </div>
+
+        <div class="mb-3">
+            <label for="tool" class="form-label">Select Security Tool</label>
+            <select id="tool" class="form-select">
+                <option>Nmap</option>
+                <option>Masscan</option>
+                <option>SQLmap</option>
+                <option>Nikto</option>
+                <option>Metasploit</option>
+                <option>Wireshark</option>
+            </select>
+        </div>
+
+        <button class="btn btn-primary w-100" onclick="runTest()">Run Test</button>
+
+        <h4 class="mt-4">Results:</h4>
+        <div style="position: relative;">
+            <pre id="output" class="bg-light text-dark p-3"></pre>
+            <button class="copy-btn" onclick="copyOutput()">
+                <i class="fas fa-copy"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light text-center py-3 mt-5">
+        <p>Developed by John B</p>
+        <p>MIT License</p>
+        <div>
+            <a href="https://github.com/your-github" class="text-light mx-2" target="_blank">GitHub</a>
+            <a href="https://instagram.com/your-instagram" class="text-light mx-2" target="_blank">Instagram</a>
+            <a href="https://linkedin.com/in/your-linkedin" class="text-light mx-2" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
