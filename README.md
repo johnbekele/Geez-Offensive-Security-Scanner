@@ -54,11 +54,11 @@ npm run build
    ```sh
    git commit -m "Added a new feature"
    ```  
-4. Push to your fork and create a pull request.  
+4. Push to your fork and create a pull request.
+   ![image](https://github.com/user-attachments/assets/ea296ea9-9b7f-4bc0-824a-f12f5ffee8d8)
+
 
 ## License  
 This project is open-source. Feel free to modify and improve it.  
 
 ---
-
-Let me know if you need any changes! 🚀
