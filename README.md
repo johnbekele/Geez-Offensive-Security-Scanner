@@ -55,7 +55,7 @@ npm run build
    git commit -m "Added a new feature"
    ```  
 4. Push to your fork and create a pull request.
-   ![image](https://github.com/user-attachments/assets/ea296ea9-9b7f-4bc0-824a-f12f5ffee8d8)
+   ![image](https://github.com/user-attachments/assets/ea296ea9-9b7f-4bc0-824a-f12f5ffee8d8)  ![image](https://github.com/user-attachments/assets/ab9917d8-1aa4-48ce-af33-ff16d8bdbec7)
 
 
 ## License  
